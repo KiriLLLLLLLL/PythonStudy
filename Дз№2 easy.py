@@ -21,7 +21,7 @@ __author__ = 'Ермаченков Кирилл'
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 i = 1
 for fruit in fruits:
-    print('{}.'.format(i) , fruit)
+    print('{}.'.format(i) , '{:>9}'.format(fruit))
     i += 1
 
 
