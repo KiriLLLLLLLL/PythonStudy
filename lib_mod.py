@@ -8,6 +8,7 @@ __author__ = 'Ермаченков Кирилл'
 
 import os
 import shutil
+import sys
 
 def chek_fol(path):
     if not os.path.exists(path):
@@ -19,6 +20,7 @@ def rem_fol(path):
 pro_name = 'Дз№5'
 path = os.getcwd()
 print(path)
+
 
 sel_act = int(input('Выберите действие: \n1 - создать папки; \n2 - удалить папки \nВведите число: '))
 
@@ -49,8 +51,8 @@ print(lstDir)
 # Напишите скрипт, создающий копию файла, из которого запущен данный скрипт.
 
 
-os.system('copy Дз№5 easy.py newДЗ№5 easy.py')
-print()
+os.system('copy Дз№5_easy.py lib_mod.py')
+
 
 
 

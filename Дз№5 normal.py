@@ -1,5 +1,5 @@
 import os
-import lib_mod as lm 
+import HW5 as lm 
 
 def change_dir (path):
     try:
@@ -25,13 +25,13 @@ def start ():
             path_name = input('Укажите папку для перехода: ')
             print(change_dir(path_name))
         elif answer == '2':
-            lm.list_dir()
+            lm.ls_dirs()
         elif answer == '3':
             name = input('Введите имя удаляемой папки: ')
-            lm.rem_fol(name)
+            lm.rm_dirs(name)
         elif answer == '4':
             name = input('Введите имя новой папки: ')
-            lm.chek_fol(name)
+            lm.mk_dirs(name)
 
 
 start()

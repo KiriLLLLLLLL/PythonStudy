@@ -34,6 +34,8 @@ def rem_dir():
     if not file_name:
         print("Необходимо указать имя файла вторым аргументом")
         return
+    if input(f'Удалить {file_name}? Да(Y)/Нет(N) ').lower() not in (('д', 'да', 'y', 'yes')):
+        return
     file_path = os.path.join(os.getcwd(), file_name)
     try:
         os.remove(file_path)
@@ -90,7 +92,7 @@ except IndexError:
     dir_name = None
 
 try:
-    file_name = sys.argv[2]
+    file_name = sys.argv[3]
 except IndexError:
     file_name = None
 
